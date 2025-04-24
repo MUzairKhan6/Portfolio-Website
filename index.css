@@ -793,3 +793,69 @@ nav .container {
   margin: 0 auto 1.6rem auto;
 }
 /* End Hire Me  */
+
+/* footer */
+
+footer{
+  background-color: #222;
+  padding: 6rem 0;
+}
+.footer .grid-4{
+  display: grid;
+  grid-template-columns: 3.5fr 2fr 2fr 3fr;
+}
+.grid-4-col{
+  padding: 0 1.7rem;
+}
+.footer .tittle-sm{
+  color: #fafafa;
+  margin-bottom:0.9rem;
+}
+.footer .text{
+  color: #aaa;
+}
+.footer-links{
+  color: #888;
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  transition: 0.3s;
+}
+.footer-links  a:hover{
+  color: var(--main-color);
+}
+.footer-input-wrap{
+  display: grid;
+  grid-template-columns: auto 50px;
+  width: 100%;
+  height: 50px;
+  border-radius:30px ;
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+.footer-input{
+  background: #373737;
+  color: #333;
+  outline: none;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 1.1rem;
+}
+.input-arrow{
+  color: #fff;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  transition: 0.3s;
+}
+.input-arrow:hover{
+  background-color: #6b44e0;
+}
+.focus{
+  background: #fff;
+}
+
+
+/* End footer */
