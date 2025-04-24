@@ -840,6 +840,7 @@ footer{
   border: none;
   padding: 0 1.5rem;
   font-size: 1.1rem;
+  transition: 0.3s;
 }
 .input-arrow{
   color: #fff;
