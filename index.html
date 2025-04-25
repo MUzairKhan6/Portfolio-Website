@@ -20,7 +20,7 @@
   </head>
   <body>
     <main>
-      <header>
+      <header id="header">
         <div class="overlay overlay-lg">
           <img src="shapes/letters.png" class="letters" />
         </div>
@@ -31,23 +31,13 @@
             </div>
             <div class="links">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li>
-                  <a href="#">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#" class="active">hire Me</a>
-                </li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hireme" class="active">Hire Me</a></li>
               </ul>
             </div>
           </div>
@@ -71,7 +61,7 @@
           </div>
         </div>
       </header>
-      <section class="services section">
+      <section class="services section" id="services">
         <div class="container">
           <div class="section-header">
             <h3 class="tittle" data-tittle="What I Do">Services</h3>
@@ -123,7 +113,7 @@
           </div>
         </div>
       </section>
-      <secction class="portfolio section">
+      <secction class="portfolio section" id="portfolio">
         <div class="background-bg"></div>
 
         <div class="container">
@@ -261,7 +251,7 @@
         </div>
       </secction>
 
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container">
           <div class="section-header">
             <h3 class="tittle" data-tittle="Who Am I">About Me</h3>
@@ -418,7 +408,7 @@
         </div>
       </section>
 
-      <section class="testimonials section" id="testimonials">
+      <section class="testimonials section" id="testimonials" id="testimonials">
         <div class="container">
           <div class="section-header">
             <h3 class="tittle" data-tittle="What People Say">Testimonials</h3>
@@ -525,7 +515,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="contact-box">
             <div class="contact-info">
@@ -590,7 +580,7 @@
         </div>
       </section>
 
-      <section class="hireme">
+      <section class="hireme" id="hireme">
         <div class="container">
           <h3 class="tittle" data-tittle="Hire Me">Lets Talk About Projects</h3>
           <p class="text">
@@ -609,22 +599,26 @@
         <div class="grid-4">
           <div class="grid-4-col footer-about">
             <h3 class="tittle-sm">About</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis iure ipsa ex aliquam autem consequatur repellendus sit cum ut fuga pariatur itaque, facilis delectus nisi ipsam asperiores recusandae incidunt!</p>
-
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              perspiciatis iure ipsa ex aliquam autem consequatur repellendus
+              sit cum ut fuga pariatur itaque, facilis delectus nisi ipsam
+              asperiores recusandae incidunt!
+            </p>
           </div>
+
           <div class="grid-4-col footer-links">
             <h3 class="tittle-sm">Links</h3>
             <ul>
-              <li>  <a href="#">Services</a>    </li>
-              <li>  <a href="#">Portfolio</a>   </li>
-              <li>  <a href="#">About</a>       </li>
-              <li>  <a href="#">Testimonials</a>    </li>
-              <li>  <a href="#">ContactS</a>    </li>
-
-        
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contacts</a></li>
             </ul>
           </div>
-          <div class="grid-4-col footer-links ">
+
+          <div class="grid-4-col footer-links">
             <h3 class="tittle-sm">Services</h3>
             <ul>
               <li><a href="#">Web Design</a></li>
@@ -635,22 +629,58 @@
             </ul>
           </div>
 
-          <div class="grid-4-col footer-newsletter ">
+          <div class="grid-4-col footer-newsletter">
             <h3 class="tittle-sm">Subscribe</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque assumenda autem et quidem distinctio asperiores ducimus tenetur officiis necessitatibus voluptates quos, debitis eum voluptas iure esse voluptate ullam hic!</p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              atque assumenda autem et quidem distinctio asperiores ducimus
+            </p>
             <div class="footer-input-wrap">
-              <input type="email" class="footer-input" placeholder="Email">
+              <input type="email" class="footer-input" placeholder="Email" />
               <a href="#" class="input-arrow">
-                <i class="fas-fa-angle-right"></i>
+                <i class="fas fa-angle-right"></i>
               </a>
             </div>
           </div>
         </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              copyright&copy;2022 All rights reserved |Made by
+              <span>Uzair</span>
+            </p>
+          </div>
+
+          <div class="followme-wraap">
+            <div class="followme">
+              <h3>Follow Me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+        </div>
       </div>
     </footer>
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="isotope.pkgd.min.js"></script>
