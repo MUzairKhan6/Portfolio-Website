@@ -18,7 +18,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
-  <body>
+  <body class="stop-scrolling">
     <main>
       <header id="header">
         <div class="overlay overlay-lg">
@@ -39,6 +39,9 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#hireme" class="active">Hire Me</a></li>
               </ul>
+            </div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
             </div>
           </div>
         </nav>
@@ -129,13 +132,13 @@
               <button class="filter-btn" data-filter=".appdev">
                 MOBILE APP
               </button>
-              <button class="filter-btn" data-filter=".logo">
+              <button class="filter-btn" data-filter=".logo-design">
                 LOGO DESIGN
               </button>
             </div>
 
             <div class="grid">
-              <div class="grid-item logo">
+              <div class="grid-item logo-design">
                 <div class="gallery-image">
                   <img src="portfolio/port1.jpg" alt="" />
                   <div class="img-overlay">
@@ -183,7 +186,7 @@
                   </div>
                 </div>
               </div>
-              <div class="grid-item logo">
+              <div class="grid-item logo-design">
                 <div class="gallery-image">
                   <img src="portfolio/port5.jpg" alt="" />
                   <div class="img-overlay">
@@ -207,7 +210,7 @@
                   </div>
                 </div>
               </div>
-              <div class="grid-item logo">
+              <div class="grid-item logo-design">
                 <div class="gallery-image">
                   <img src="portfolio/port7.jpg" alt="" />
                   <div class="img-overlay">
@@ -269,28 +272,28 @@
                 <div class="skill html">
                   <h3 class="skill-tittle">HTML</h3>
                   <div class="skill-bar">
-                    <div class="skill-progress" data-progress="80%"></div>
+                    <div class="skill-progress" data-progress="90%"></div>
                   </div>
                 </div>
 
                 <div class="skill css">
                   <h3 class="skill-tittle">CSS</h3>
                   <div class="skill-bar">
-                    <div class="skill-progress" data-progress="90%"></div>
+                    <div class="skill-progress" data-progress="70%"></div>
                   </div>
                 </div>
 
                 <div class="skill js">
                   <h3 class="skill-tittle">JavaScript</h3>
                   <div class="skill-bar">
-                    <div class="skill-progress" data-progress="70%"></div>
+                    <div class="skill-progress" data-progress="80%"></div>
                   </div>
                 </div>
               </div>
-              <a href="" class="btn">Read More</a>
+              <a href="#" class="btn">Read More</a>
             </div>
             <div class="column-2 image">
-              <img src="about.png" alt="" />
+              <img src="about.png" class="z-index" alt="" />
             </div>
           </div>
         </div>
@@ -582,7 +585,7 @@
 
       <section class="hireme" id="hireme">
         <div class="container">
-          <h3 class="tittle" data-tittle="Hire Me">Lets Talk About Projects</h3>
+          <h3 class="tittle" >Lets Talk About Projects</h3>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             explicabo nemo vero sit, necessitatibus rerum dolorum animi odio
