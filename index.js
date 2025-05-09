@@ -8,32 +8,30 @@ const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
 
-footer_input.addEventListener("focus",  () => {
+footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
 });
 
-footer_input.addEventListener("blur",  () => {
-  if(footer_input.value !="")return;
+footer_input.addEventListener("blur", () => {
+  if (footer_input.value != "") return;
   footer_input.classList.remove("focus");
 });
 
-function closeMenu(){
+function closeMenu() {
   navbar.classList.remove("open");
   document.body.classList.remove("stop-scrolling");
-
 }
 
 hamburger_menu.addEventListener("click", () => {
-  if(!navbar.classList.contains("open")){
+  if (!navbar.classList.contains("open")) {
     navbar.classList.add("open");
     document.body.classList.add("stop-scrolling");
-  }
-  else{
+  } else {
     closeMenu();
   }
 });
 
-links.forEach( link => link.addEventListener("click" , () => closeMenu()));
+links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
 filter_btns.forEach((btn) =>
   btn.addEventListener("click", () => {
@@ -41,19 +39,20 @@ filter_btns.forEach((btn) =>
     btn.classList.add("active");
 
     let filterValue = btn.dataset.filter;
-    $(".grid ").isotope({ filter: filterValue });
+
+    $(".grid").isotope({ filter: filterValue });
   })
 );
 
 $(".grid").isotope({
   itemSelector: ".grid-item",
   layoutMode: "fitRows",
-  TransitionDuration: "0.6s",
+  transitionDuration: "0.6s",
 });
 
 window.addEventListener("scroll", () => {
   skillsEffect();
-  countup();
+  countUp();
 });
 
 function checkScroll(el) {
@@ -61,21 +60,21 @@ function checkScroll(el) {
   if (window.innerHeight >= rect.top + el.offsetHeight) return true;
   return false;
 }
+
 function skillsEffect() {
   if (!checkScroll(skills_wrap)) return;
-  skills_bars.forEach((skill) => (skill.style.width = skill.dataset.prgress));
+  skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
 }
 
-
-function countup() {
+function countUp() {
   if (!checkScroll(records_wrap)) return;
   records_numbers.forEach((numb) => {
     const updateCount = () => {
       let currentNum = +numb.innerText;
       let maxNum = +numb.dataset.num;
-      console.log(maxNum);
       let speed = 100;
       const increment = Math.ceil(maxNum / speed);
+
       if (currentNum < maxNum) {
         numb.innerText = currentNum + increment;
         setTimeout(updateCount, 1);
@@ -83,6 +82,7 @@ function countup() {
         numb.innerText = maxNum;
       }
     };
+
     setTimeout(updateCount, 400);
   });
 }
